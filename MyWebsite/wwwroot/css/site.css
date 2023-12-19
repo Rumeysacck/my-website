@@ -18,5 +18,38 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #FFFBF5;
+    
+}
+.navbar-nav .nav-link {
+    font-weight: 600;
+    color: #F5F5F5;
+}
+
+nav.navbar {
+    border-radius: 50px; 
+}
+
+.navbar {
+    border-radius: inherit;
+    margin-top: 15px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    background-color: #F8F7F4 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+#about-headline {
+    
+    font-family: 'Sorts Mill Goudy', serif;
+    font-weight:bold; 
+    font-size: 50px; 
+    text-align: center;
+    margin-top: 50px;
+    
 }
