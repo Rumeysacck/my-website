@@ -22,6 +22,8 @@ body {
     background-color: #FFFBF5;
     
 }
+
+
 .navbar-nav .nav-link {
     font-weight: 600;
     color: #000 !important; /* Menü linkleri rengi */
@@ -47,17 +49,21 @@ nav.navbar {
     background-color: #000 !important; /* Mobil ikon rengi */
 }
 
+
+
 #about-headline {
-    
-    font-family: 'Sorts Mill Goudy', serif;
-    font-weight:bold; 
-    font-size: 50px; 
+    font-family: 'Telex', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
     text-align: center;
     margin-top: 50px;
-    
+    line-height: 1.2;
+    color: #;
 }
 .navbar-brand img {
-    max-height: 40px; 
-    width: auto; 
-    display: inline-block; 
+    max-width: 100px;
+    width: auto;
+    display: inline-block;
+    margin-left: 15px; /* Sağa kaydırma */
+    margin-top: 5px;
 }
