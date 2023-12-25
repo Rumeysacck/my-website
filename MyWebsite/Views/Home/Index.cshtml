@@ -3,7 +3,12 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <img id="fadeImage" src="~/images/rumeysacck.png" alt="Rumeysa Image" />
 </div>
-
+@section scripts {
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>$(document).ready(function () {
+            // Sayfa yüklendiğinde resmi göster
+            $("#fadeImage").css("opacity", "1");
+        });</script>
+}
