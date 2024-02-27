@@ -1,0 +1,19 @@
+﻿@model List<Blog>
+    
+        <div class="blog-title">
+            <h2>Bloglar</h2>
+        </div>
+        <div class="blog-container">
+            @foreach (var blog in Model)
+            {
+
+                <div class="blog-box">
+                    <img src="~/images/study.jpeg" alt="Study Image">
+                    <h3>@blog.Title</h3>
+                    <p>@blog.Content</p>
+                    <p>@blog.DateCreated</p>
+                    <a asp-action="Details" asp-controller="VBlog" asp-route-title="@blog.Title">Detayları Gör</a>
+                </div>
+
+            }
+        </div>

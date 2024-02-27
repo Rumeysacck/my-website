@@ -150,9 +150,53 @@ nav.navbar {
     margin-left:130px;
 }
 #fadeImage {
-    opacity: 0; /* Başlangıçta görünmez */
-    transition: opacity 2s ease-in-out; /* Geçiş efekti için ayarla */
-    max-width: 60%; /* Resmin maksimum genişliğini ayarla */
-    margin: auto; /* Resmi sayfanın ortasına yerleştir */
+    opacity: 0; 
+    transition: opacity 2s ease-in-out; 
+    max-width: 60%; 
+    margin: auto; 
     margin-top: 150px;
+}
+
+
+/* Blog sayfası */
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+     
+}
+.blog-title {
+    text-align:center;
+    
+}
+
+.blog-box {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    width: 50%;
+    height: 200px;
+    display: flex;
+    overflow: hidden;
+    float: left;
+    
+}
+    /* Fotoğrafı kutucuğun içinde tut */
+    .blog-box img {
+        max-width: 33%; /* Resmin genişliğini kutucuğun üçte birine ayarla */
+        height: 100%; /* Resmin yüksekliğini kutucuğun yüksekliğine ayarla */
+        object-fit: cover; /* Resmin boyutunu koruyarak sığdır */
+        margin-right: 10px;
+    }
+    /* Metin bölgesi */
+    .blog-box .text-content {
+        flex-grow: 1; /* Metin içeriğini genişleterek boş alanı kapla */
+    }
+
+.blog-details {
+    
+    padding: 10px;
+    margin: 10px;
 }
