@@ -1,0 +1,16 @@
+Web layer:
+    Get user input
+    Send data to Service layer
+
+Service layer:
+    Validate data
+    Send data to Data layer
+
+Data layer:
+    Save data to database
+
+Entity layer:
+    Represent database table and columns
+
+Core layer:
+    Database connection and utility functions
