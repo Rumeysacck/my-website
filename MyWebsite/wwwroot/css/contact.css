@@ -2,7 +2,7 @@ body{
     color:#fff
   }
   .right_conatct_social_icon{
-       background: linear-gradient(to top right, #a5a8cc -5%, #a4cbb1 100%);
+       background: linear-gradient(to top right, #9F948E -5%, #E2D9D4 100%);
   }
   .contact_us{
       background-color: #FFFBF5;
@@ -85,17 +85,18 @@ body{
   }
   
   button.contact_form_submit {
-      background: linear-gradient(to top right, #b1b1b1 -5%, #a4cbb1 100%);
+      background: linear-gradient(to top right, #9F948E -5%, #E2D9D4 100%);
       border: none;
       color: #fff;
-      padding: 10px 15px;
-      width: 100%;
+      padding: 5px 10px;
+      width: 150px;
       margin-top: 25px;
-      border-radius: 35px;
+      border-radius: 20px;
       cursor: pointer;
       font-size: 14px;
       letter-spacing: 2px;
   }
+
   .socil_item_inner li{
       list-style: none;
   }
