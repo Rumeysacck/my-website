@@ -5,10 +5,11 @@ using System.Reflection;
 using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
+using Blog.Core.Entities;
 
 namespace Blog.Entity.Entities
 {
-    public class Article
+    public class Article : EntityBase , IEntityBase // classları interfaceden önce tanımla
     {
 
         public string Title { get; set; }
