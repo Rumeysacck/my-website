@@ -2,7 +2,7 @@ body{
     color:#fff
   }
   .right_conatct_social_icon{
-       background: linear-gradient(to top right, #9F948E -5%, #E2D9D4 100%);
+       background:#FFFBF5;
   }
   .contact_us{
       background-color: #FFFBF5;
@@ -91,10 +91,12 @@ body{
       padding: 5px 10px;
       width: 150px;
       margin-top: 25px;
+      margin-left: 10px;
       border-radius: 20px;
       cursor: pointer;
       font-size: 14px;
       letter-spacing: 2px;
+      display: block;
   }
 
   .socil_item_inner li{
