@@ -65,6 +65,20 @@
             &copy; 2023 - MyWebsite - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+        const firebaseConfig = {
+            apiKey: "AIzaSyB75CALlIyuYbotFLsCuBa91IZRCz68kfQ",
+            authDomain: "mywebsite-e9775.firebaseapp.com",
+            databaseURL: "https://mywebsite-e9775-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "mywebsite-e9775",
+            storageBucket: "mywebsite-e9775.appspot.com",
+            messagingSenderId: "301812747195",
+            appId: "1:301812747195:web:8442de049c472ae16a929e"
+        };
+        const app = initializeApp(firebaseConfig);
+</script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

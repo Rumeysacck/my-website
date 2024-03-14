@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<h1>Blog Ekle</h1>
+<button id="addButton">Blog Ekle</button>
+
+<script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-database.js"></script>
+<script>
+    // Firebase yapılandırması
+   const firebaseConfig = {
+            apiKey: "AIzaSyB75CALlIyuYbotFLsCuBa91IZRCz68kfQ",
+            authDomain: "mywebsite-e9775.firebaseapp.com",
+            databaseURL: "https://mywebsite-e9775-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "mywebsite-e9775",
+            storageBucket: "mywebsite-e9775.appspot.com",
+            messagingSenderId: "301812747195",
+            appId: "1:301812747195:web:8442de049c472ae16a929e"
+        };
+
+    // Firebase'i başlat
+    firebase.initializeApp(firebaseConfig);
+
+    // Veritabanı referansını al
+    var database = firebase.database();
+
+    // Buton elementini seç
+    var addButton = document.getElementById("addButton");
+
+    // Butona tıklanınca çalışacak fonksiyon
+    addButton.addEventListener("click", function () {
+        // Örnek blog verisi
+        var blogData = {
+            title: "Yeni Blog Başlığı",
+            content: "Bu yeni bir blog içeriğidir."
+        };
+
+        // Yeni bir blog eklemek için 'blogs' tablosuna bir referans oluştur
+        var newBlogRef = database.ref('blogs').push();
+
+        // Blog verisini ekleyerek veritabanına gönder
+        newBlogRef.set(blogData)
+            .then(function () {
+                console.log("Blog başarıyla eklendi.");
+            })
+            .catch(function (error) {
+                console.error("Blog eklenirken bir hata oluştu: ", error);
+            });
+    });
+</script>
